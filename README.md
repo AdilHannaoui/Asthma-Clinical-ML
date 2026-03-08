@@ -69,9 +69,15 @@ Asthma-Control-ML/
 ## Quickstart
 
 ### Installation
+
+Using conda (recommended):
 ```bash
-git clone https://github.com/AdilHannaoui/Asthma-Control-ML.git
-cd Asthma-Control-ML
+conda env create -f environment.yml
+conda activate ml-clinico
+```
+
+Or using pip:
+```bash
 pip install -r requirements.txt
 ```
 
