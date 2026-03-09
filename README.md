@@ -81,11 +81,26 @@ Or using pip:
 pip install -r requirements.txt
 ```
 
-### Generate predictions
+Or using Docker:
 ```bash
-python predict.py --input data/new_patients.csv --output results/predictions.csv --proba
+docker build -t asthma-control-ml .
 ```
 
+
+### Generate predictions
+
+**Standard:**
+```bash
+python predict.py --input data/patients.csv --output predictions.csv --proba
+```
+
+**Docker:**
+```bash
+docker run -v $(pwd)/data:/app/data asthma-control-ml \
+    --input data/patients.csv \
+    --output data/predictions.csv \
+    --proba
+```
 ### Arguments
 
 | Argument | Required | Default | Description |
