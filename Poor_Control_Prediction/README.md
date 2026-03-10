@@ -74,7 +74,7 @@ Asthma-Control-ML/
 Using conda (recommended):
 ```bash
 conda env create -f environment.yml
-conda activate ml-clinico
+conda activate clinical-ml
 ```
 
 Or using pip:
