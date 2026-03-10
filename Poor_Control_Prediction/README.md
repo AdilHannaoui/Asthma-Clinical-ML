@@ -62,6 +62,7 @@ Asthma-Control-ML/
 ├── data/
 │   └── .gitkeep              # Data folder versioned without data (clinical records, not uploaded)
 ├── requirements.txt          # Python dependencies
+├── environment.yml           # Python dependencies for conda environment
 └── .gitignore
 ```
 
