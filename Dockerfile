@@ -31,8 +31,8 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy model artefacts and prediction script
-COPY models/ models/
-COPY predict.py .
+COPY Poor_Control_Prediction/models/ models/
+COPY Poor_Control_Prediction/src/predict.py .
 
 # Default entrypoint — runs predict.py with any arguments passed to docker run
 ENTRYPOINT ["python", "predict.py"]
