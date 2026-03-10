@@ -1,4 +1,4 @@
-name: ml-clinico
+name: clinical-ml
 channels:
   - defaults
   - bioconda
@@ -164,4 +164,4 @@ dependencies:
       - websocket-client==1.9.0
       - widgetsnbextension==4.0.15
       - xgboost==3.2.0
-prefix: /home/adilh/miniconda3/envs/ml-clinico
+prefix: /home/adilh/miniconda3/envs/clinical-ml
